@@ -23,12 +23,12 @@ class WpilibRobot : public IterativeRobot {
 int main(int argc, char **argv) {
   gflags::ParseCommandLineFlags(&argc, &argv, true);
   if (!HAL_Initialize(500, 0)) {
-    std::cerr << "FATAL ERROR: HAL could not be initialized" << std::endl;
+    std::cerr << "FATAL ERROR: HAL could not be initialized!!!!!!!" << std::endl;
     return -1;
   }
   HAL_Report(HALUsageReporting::kResourceType_Language,
              HALUsageReporting::kLanguage_CPlusPlus);
   static WpilibRobot robot;
-  std::printf("Robot program starting\n");
+  std::printf("Robot program starting woo hoo\n");
   robot.StartCompetition();
 }
